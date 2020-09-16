@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Utilizaci&oacute;n de AJAX</h1>
+    <!-- Con AJAX el contenido se muestra sin recargar la página -->
+    <button type="button" onclick="peticion()">Cargar datos</button>
+    <button type="button" onclick="limpiar()">Borrar</button>
+    <br>
+
+    <!-- Área de texto donde volcaremos la información-->
+    <!-- Simple table with header -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Capital</th>
+                <th>Monedas</th>
+                <th>Idiomas</th>
+                <th>Bandera</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabla">
+        </tbody>
+    </table>
+
+    <!-- Script con nuestro cóigo Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

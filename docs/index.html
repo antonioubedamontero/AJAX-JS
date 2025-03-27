@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/ajax-js/">
     <title>AJAX</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1 style="text-align: center;">Utilizaci&oacute;n de AJAX</h1>
-    <!-- Con AJAX el contenido se muestra sin recargar la página -->
-    <button type="button" onclick="peticion()">Cargar datos</button>
-    <button type="button" onclick="limpiar()">Borrar</button>
+    <h1 class="h1-title">Utilizaci&oacute;n de AJAX</h1>
+
+    <!-- With AJAX the content is displayed without reloading the page -->
+    <div class="button-container">
+        <button type="button" onclick="petition()">Cargar datos</button>
+        <button type="button" onclick="clearTable()">Borrar</button>
+    </div>
+
     <br>
 
-    <!-- Área de texto donde volcaremos la información-->
+    <!-- Text area where we will dump the information -->
     <!-- Simple table with header -->
-    <table>
+    <table id="table">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -31,7 +34,7 @@
         </tbody>
     </table>
 
-    <!-- Script con nuestro cóigo Javascript -->
+    <!-- Script with our Javascript code -->
     <script src="script.js"></script>
 </body>
 </html>
